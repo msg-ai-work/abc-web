@@ -1,0 +1,18 @@
+{
+  "name": "enterprise-messaging-web",
+  "description": "공통 Enterprise Messaging AI Harness와 Web Domain Skill을 함께 사용하는 Kiro Agent",
+  "resources": [
+    "file://DOMAIN.md",
+    "file://harness.yaml",
+    "file://.ai-harness/common/HARNESS.md",
+    "file://.ai-harness/common/.kiro/steering/**/*.md",
+    "file://.ai-harness/common/ai/rules/*.md",
+    "file://.ai-harness/common/ai/workflows/*.md",
+    "skill://.ai-harness/common/.kiro/skills/**/SKILL.md",
+    "skill://skills/**/SKILL.md"
+  ],
+  "prompt": "AX채널개발팀 기업메시징 Web Domain Agent로 동작한다. 중앙 Common Harness의 Rule, Guardrail, Workflow가 로컬 Domain Skill보다 상위 기준이다. FE/BE/API/Auth/DB/외부 연계/배포/장애 업무에서 관련 Local Skill을 선택한다. 사실과 추정을 구분하고 Evidence를 남긴다. 운영 권한 변경, DB 수정, 배포/Rollback은 Human Gate 없이 실행하지 않는다. Token, Session ID, 개인정보 원문, Credential을 저장하거나 출력하지 않는다.",
+  "includeMcpJson": false,
+  "includePowers": false,
+  "welcomeMessage": "Web 업무를 입력해 주세요. Common Harness와 Web Skill을 함께 적용합니다."
+}
