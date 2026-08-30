@@ -6,13 +6,13 @@ priority: top-3
 ---
 # Web Smoke Test
 
-## 원칙
+## 목적
 Smoke Test는 전체 회귀시험이 아니다. **서비스 사용 가능 여부를 빠르게 확인하는 최소 핵심 경로**만 검증한다.
 
-## 사전 정보
+## 입력 / 사전 정보
 환경, 배포 버전, 배포 완료 시각, 대상 기능, 테스트 계정 Role, 관련 외부 연계 상태.
 
-## 핵심 경로
+## 절차 / 핵심 경로
 - [ ] 로그인 및 정상 Session 유지
 - [ ] 권한별 메인 화면 진입
 - [ ] 메시지 발송 화면 진입/필수값 Validation
@@ -34,7 +34,7 @@ Smoke Test는 전체 회귀시험이 아니다. **서비스 사용 가능 여부
 
 **판정:** 전체 Smoke PASS로 처리하지 않는다. 해당 Role이 운영 대상이면 FAIL이며 `auth-session-diagnosis`로 연결한다.
 
-## Evidence
+## 출력 / Evidence
 실행시각, 환경, 버전, Role, 테스트 항목별 결과, HTTP Status/오류 요약, 최종 판정.
 
 ## Human Gate
