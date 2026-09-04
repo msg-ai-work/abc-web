@@ -1,7 +1,8 @@
 ---
 name: web-domain-core
 summary: 기업메시징 고객/관리자 웹의 운영·개발 Skill. FE/BE, API, 인증/권한, 배포 및 웹 장애 분석에 사용한다.
-owner-role: web-domain-owner
+responsible-role: 담당자
+reviewer-role: Reviewer
 version: "0.1"
 migrated-from: msg-ai-work/abc/.kiro/skills/domains/web/SKILL.md
 ---
